@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>m06homework</title>
+</head>
+<body>
+<h1>m06</h1>
+<button name="calcButton" onclick="m06();">こたえ</button>
+
+<div id="consolelog"></div>
+<script type="text/javascript">
+    function m06() {
+      let ans=1;
+for(let num=1;num<=30;num++){
+if(num % 15===0){
+   console.log("FizzBuzz");
+   }else if(num % 5===0){
+	   console.log("Buzz");
+	   }else if(num % 3 ===0){
+		   console.log("Fizz");	   
+}else{
+	console.log(ans);
+}
+ans++;
+}
+	}
+	console.log = function (log) {
+document.getElementById('consolelog').innerHTML += log + "<br>";
+}
+
+</script>
+<noscript>JavaScriptが利用できないブラウザです</noscript>
+</body>
+</html>
