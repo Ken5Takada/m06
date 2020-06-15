@@ -2,23 +2,27 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<title>m05homework</title>
+<title>m06homework</title>
 </head>
 <body>
-<h1>m05</h1>
-<button name="calcButton" onclick="m05();">解答</button>
+<h1>m06</h1>
+<button name="calcButton" onclick="m06();">こたえ</button>
 
 <div id="consolelog"></div>
 <script type="text/javascript">
-    function m05() {
-      let num = Math.round(Math.random()* 30 + 1);
-  console.log("現在の値:" + num);
-  if(num % 15===0){
-   console.log("15の倍数");
+    function m06() {
+      let ans=1;
+for(let num=1;num<=30;num++){
+if(num % 15===0){
+   console.log("FizzBuzz");
    }else if(num % 5===0){
-	   console.log("5の倍数");
+	   console.log("Buzz");
 	   }else if(num % 3 ===0){
-		   console.log("3の倍数");	   
+		   console.log("Fizz");	   
+}else{
+	console.log(ans);
+}
+ans++;
 }
 	}
 	console.log = function (log) {
